@@ -1,0 +1,22 @@
+h1. My dotfiles
+
+h2. Warnings!
+
+Some files will be deleted!
+Still working on this, I will add backup support soon.
+
+h2. How it works
+
+The instalation will pick every file within the _*targets*_ directory and create symlinks (after delete the original files) within the home analog directory. 
+
+In order to allow the creation of config files wihtin child directories, without deleting the parent one, _*_*_ can be used as prefix fo the dirnames (see "examples":/#examples). 
+
+h2. Usage
+
+# clone the repo on your home directory
+# move into the repo's directory
+# run rake install
+
+h2. Examples
+
+TBA
