@@ -9,7 +9,7 @@ h2. How it works
 
 The instalation will pick every file within the _*targets*_ directory and create symlinks (after delete the original files) within the home analog directory. 
 
-In order to allow the creation of config files wihtin child directories, without deleting the parent one, _*_*_ can be used as prefix fo the dirnames (see "examples":#examples). 
+In order to allow the creation of config files within child directories, without deleting the parent one, _*_*_ can be used as prefix of the dirctory name (see "examples":#examples). 
 
 h2. Usage
 
