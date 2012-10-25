@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <gconf>
 	<entry name="default_profile" mtime="1351184480" type="string">
-		<stringvalue>Default</stringvalue>
+		<stringvalue>rdecurnex</stringvalue>
 	</entry>
 	<entry name="profile_list" mtime="1351184480" type="list" ltype="string">
 		<li type="string">
-			<stringvalue>Default</stringvalue>
+			<stringvalue>rdecurnex</stringvalue>
 		</li>
 	</entry>
 </gconf>
