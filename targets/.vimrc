@@ -9,3 +9,5 @@ set expandtab
 
 "respect previous line indentation
 set autoindent
+
+set eol
