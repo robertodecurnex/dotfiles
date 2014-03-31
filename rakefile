@@ -1,3 +1,4 @@
+require 'fileutils'
 require 'rake'
 
 desc "Create symliks for every file within the dotfiles. (Ignores this rakefile and any file starting with '_')"
@@ -16,9 +17,9 @@ task :install do
       link_name = target.gsub(/(^|\/)_/, '\1')
       puts "Creating link: #{home_directory}/dotfiles/targets/#{target} => #{home_directory}/#{link_name}"
       if !File.directory?("#{home_directory}/#{link_name}") || File.symlink?("#{home_directory}/#{link_name}")
-        File.delete("#{home_directory}/#{link_name}")
+        File.delete("#{home_directory}/#{link_name}") if File.exist?("#{home_directory}/#{link_name}")
       else
-        Dir.rmdir("#{home_directory}/#{link_name}")
+        FileUtils.rm_r("#{home_directory}/#{link_name}")
       end
       File.symlink("#{home_directory}/dotfiles/targets/#{target}", "#{home_directory}/#{link_name}")
     end
