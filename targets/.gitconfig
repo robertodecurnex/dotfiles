@@ -1,5 +1,7 @@
 [user]
 	email = decurnex.roberto@gmail.com
-	name = robertodecurnex
+	name = Roberto Decurnex
 [core]
 	editor = vim
+[alias]
+    slog = log --graph --oneline --relative-date --decorate
