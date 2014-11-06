@@ -5,3 +5,5 @@
 	editor = vim
 [alias]
     slog = log --graph --oneline --relative-date --decorate
+[rerere]
+	enabled = true
