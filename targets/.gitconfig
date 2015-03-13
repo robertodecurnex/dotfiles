@@ -5,6 +5,6 @@
 	editor = vim
 [alias]
     slog = log --graph --oneline --relative-date --decorate
-    resume = git log HEAD~1 --graph --pretty="%C(yellow)%d%Creset %s"
+    resume = log HEAD~1 --graph --pretty='%C(yellow)%d%Creset %s'
 [rerere]
 	enabled = true

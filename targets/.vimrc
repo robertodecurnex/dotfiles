@@ -1,8 +1,8 @@
 "columns cout for indentation
-set shiftwidth=4
+set shiftwidth=2
 
 "columns count for the tab
-set tabstop=4
+set tabstop=2
 
 "replacing tabs with spaces
 set expandtab
@@ -18,3 +18,4 @@ set hlsearch
 
 "enable visual wrapping
 set wrap    
+
