@@ -1,8 +1,8 @@
 "columns cout for indentation
-set shiftwidth=2
+set shiftwidth=4
 
 "columns count for the tab
-set tabstop=2
+set tabstop=4
 
 "replacing tabs with spaces
 set expandtab
@@ -19,3 +19,5 @@ set hlsearch
 "enable visual wrapping
 set wrap    
 
+"autoremove trailing whitespaces on save
+autocmd BufWritePre * :%s/\s\+$//e
