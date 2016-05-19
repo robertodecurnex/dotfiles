@@ -1,6 +1,7 @@
 [user]
 	email = decurnex.roberto@gmail.com
 	name = Roberto Decurnex
+	signingkey = E04A12C5
 [core]
 	editor = vim
 [alias]

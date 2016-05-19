@@ -1,23 +1,43 @@
 "columns cout for indentation
-set shiftwidth=4
+set shiftwidth=2
 
 "columns count for the tab
-set tabstop=4
+set tabstop=2
 
-"replacing tabs with spaces
+"soft tabs
 set expandtab
 
 "respect previous line indentation
 set autoindent
 
-"allow backspacing over line breaks 
+"allow backspacing over line breaks
 set eol
 
 "highlight every search match
-set hlsearch 
+set hlsearch
 
 "enable visual wrapping
-set wrap    
+set wrap
+
+"retab on save
+autocmd BufWritePre * :retab
+
+syntax on
+
+"specific rules for HTML files
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
+"specific rules for Javascript files
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType json setlocal shiftwidth=4 tabstop=4
 
 "autoremove trailing whitespaces on save
-autocmd BufWritePre * :%s/\s\+$//e
+fun! StripTrailingWhitespace()
+  "Don't strip on these filetypes
+  if &ft =~ 'ruby'
+    return
+  endif
+
+  %s/\s\+$//e
+endfun
+autocmd BufWritePre * call StripTrailingWhitespace()
