@@ -41,3 +41,6 @@ fun! StripTrailingWhitespace()
   %s/\s\+$//e
 endfun
 autocmd BufWritePre * call StripTrailingWhitespace()
+
+"yank to system clipboard
+clipboard=unnamed
