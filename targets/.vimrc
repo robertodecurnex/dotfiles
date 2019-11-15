@@ -19,6 +19,9 @@ set hlsearch
 "enable visual wrapping
 set wrap
 
+"yank to system clipboard
+set clipboard=unnamed
+
 "retab on save
 autocmd BufWritePre * :retab
 
@@ -41,6 +44,3 @@ fun! StripTrailingWhitespace()
   %s/\s\+$//e
 endfun
 autocmd BufWritePre * call StripTrailingWhitespace()
-
-"yank to system clipboard
-clipboard=unnamed
